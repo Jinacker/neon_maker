@@ -312,7 +312,7 @@
   }
   
   .product-title {
-    font-size: 13px; /* 모바일에서 줄바꿈 방지 */
+    font-size: 12px; /* 긴 제품명 줄바꿈 방지 */
     line-height: 1.4;
     word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
     overflow-wrap: break-word; /* 긴 영문 단어 줄바꿈 */
@@ -349,7 +349,7 @@
   }
   
   .product-title {
-    font-size: 12px; /* 360px 화면에서 줄바꿈 완전 방지 */
+    font-size: 11px; /* 가장 긴 제품명도 줄바꿈 방지 */
     line-height: 1.4;
     word-break: keep-all;
   }
