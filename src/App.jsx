@@ -14,7 +14,7 @@ function App() {
     { id: 1, number: '①', title: 'ESP8266을 이용한 WiFi 시계' },
     { id: 2, number: '②', title: '하만/카돈 유닛 활용, 거치형 블루투스 스피커' },
     { id: 3, number: '③', title: 'SKY 스톤 유닛 활용, 휴대용 블루투스 스피커' },
-    { id: 4, number: '④', title: '아날로그 전자회로 키트 제작' },
+    { id: 4, number: '④', title: '나만의 커스텀PCB 키링 만들기' },
     { id: 5, number: '⑤', title: 'PC파워를 개조한 USB 16포트 멀티 충전기' },
     { id: 6, number: '⑥', title: 'DIY 무선충전기' },
     { id: 7, number: '⑦', title: '버려지는 어댑터로 만드는 휴대폰 충전기' }
@@ -59,7 +59,13 @@ function App() {
       {/* 메인 콘텐츠 */}
       <main className="main-content">
         {activeTab === 'products' && (
-          <div className="product-list">
+          <>
+            <div className="product-intro">
+              <h2 className="main-product-title">2025 네오&메이커페어 제품 사용 설명서</h2>
+              <p className="product-subtitle">이 문서는 제품의 주요 기능과 사용 방법을 안내합니다.</p>
+              <p className="product-description">처음 사용하시는 분도 쉽게 따라 하실 수 있도록 단계별로 설명했습니다.</p>
+            </div>
+            <div className="product-list">
             {products.map(product => (
               <div 
                 key={product.id}
@@ -70,7 +76,8 @@ function App() {
                 <span className="product-title">{product.title}</span>
               </div>
             ))}
-          </div>
+            </div>
+          </>
         )}
         
         {activeTab === 'team' && (

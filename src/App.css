@@ -92,6 +92,37 @@
   padding: 20px 20px;
 }
 
+/* 제품 소개 섹션 */
+.product-intro {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.main-product-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
 /* 팀 소개 / 문의 콘텐츠 */
 .team-content, .contact-content {
   max-width: 600px;
@@ -145,7 +176,7 @@
 }
 
 .product-number {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   color: #ff6b6b;
   min-width: 40px;
