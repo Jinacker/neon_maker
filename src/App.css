@@ -89,7 +89,7 @@
 /* 메인 콘텐츠 */
 .main-content {
   flex: 1;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 /* 팀 소개 / 문의 콘텐츠 */
@@ -118,6 +118,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .product-item {
@@ -233,7 +236,7 @@
   }
   
   .main-content {
-    padding: 30px 16px;
+    padding: 16px 16px;
   }
   
   .product-item {
