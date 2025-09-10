@@ -6,6 +6,9 @@ import './App.css'
  * 메이커페어 서울 2025 네온메이커 부스 랜딩 페이지
  */
 function App() {
+  // 탭 상태 관리
+  const [activeTab, setActiveTab] = useState('products')
+  
   // 제품 목록
   const products = [
     { id: 1, number: '①', title: 'ESP8266을 이용한 WiFi 시계' },
@@ -31,20 +34,58 @@ function App() {
         </div>
       </header>
 
-      {/* 제품 리스트 */}
+      {/* 탭 네비게이션 */}
+      <nav className="tab-navigation">
+        <button 
+          className={`tab-button ${activeTab === 'products' ? 'active' : ''}`}
+          onClick={() => setActiveTab('products')}
+        >
+          제품 소개
+        </button>
+        <button 
+          className={`tab-button ${activeTab === 'team' ? 'active' : ''}`}
+          onClick={() => setActiveTab('team')}
+        >
+          팀 소개
+        </button>
+        <button 
+          className={`tab-button ${activeTab === 'contact' ? 'active' : ''}`}
+          onClick={() => setActiveTab('contact')}
+        >
+          문의
+        </button>
+      </nav>
+
+      {/* 메인 콘텐츠 */}
       <main className="main-content">
-        <div className="product-list">
-          {products.map(product => (
-            <div 
-              key={product.id}
-              className="product-item"
-              onClick={() => handleProductClick(product.id)}
-            >
-              <span className="product-number">{product.number}</span>
-              <span className="product-title">{product.title}</span>
-            </div>
-          ))}
-        </div>
+        {activeTab === 'products' && (
+          <div className="product-list">
+            {products.map(product => (
+              <div 
+                key={product.id}
+                className="product-item"
+                onClick={() => handleProductClick(product.id)}
+              >
+                <span className="product-number">{product.number}</span>
+                <span className="product-title">{product.title}</span>
+              </div>
+            ))}
+          </div>
+        )}
+        
+        {activeTab === 'team' && (
+          <div className="team-content">
+            <h2>팀 소개</h2>
+            <p>네온메이커 팀에 대한 소개가 들어갈 예정입니다.</p>
+          </div>
+        )}
+        
+        {activeTab === 'contact' && (
+          <div className="contact-content">
+            <h2>문의</h2>
+            <p>연락처 정보가 들어갈 예정입니다.</p>
+          </div>
+        )}
       </main>
 
       {/* 푸터 영역 */}
