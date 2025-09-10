@@ -1,0 +1,20 @@
+{
+  "name": "neon_maker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["maker-faire", "neon", "product-guide"],
+  "author": "네온메이커 팀",
+  "license": "MIT",
+  "description": "메이커페어 서울 2025 네온메이커 부스 제품 소개 및 설명서 페이지",
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.5"
+  }
+}
