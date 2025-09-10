@@ -49,6 +49,12 @@ function App() {
           팀 소개
         </button>
         <button 
+          className={`tab-button ${activeTab === 'location' ? 'active' : ''}`}
+          onClick={() => setActiveTab('location')}
+        >
+          부스 위치
+        </button>
+        <button 
           className={`tab-button ${activeTab === 'contact' ? 'active' : ''}`}
           onClick={() => setActiveTab('contact')}
         >
@@ -84,6 +90,13 @@ function App() {
           <div className="team-content">
             <h2>팀 소개</h2>
             <p>네온메이커 팀에 대한 소개가 들어갈 예정입니다.</p>
+          </div>
+        )}
+        
+        {activeTab === 'location' && (
+          <div className="location-content">
+            <h2>부스 위치</h2>
+            <p>메이커페어 서울 2025 부스 위치 정보가 들어갈 예정입니다.</p>
           </div>
         )}
         
