@@ -89,8 +89,15 @@ function App() {
         
         {activeTab === 'team' && (
           <div className="team-content">
-            <h2>팀 소개</h2>
-            <p>네온메이커 팀에 대한 소개가 들어갈 예정입니다.</p>
+            <div className="team-intro">
+              <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
+              <h2 className="team-title">Neo& 소개</h2>
+              <div className="team-logo-section">
+                <img src="/neon.png" alt="Neo& 팀 로고" className="team-logo" />
+              </div>
+              <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 "네오&" 입니다.</p>
+              <p className="team-description">다양한 분야의 메이커들과 함께 직접 경험하고, 여러분의 숨겨진 '메이커 본능'을 발견해보세요!</p>
+            </div>
           </div>
         )}
         
