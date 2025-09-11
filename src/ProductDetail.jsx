@@ -112,7 +112,7 @@ function ProductDetail() {
                     <li>미니멀리즘 디자인으로, 컴퓨터 책상 및 탁상 어느 곳에서도 어우러지는 디자인</li>
                     <li>한 번 wifi에 연결하면, 그 wifi를 기억하여 집 안 어느 곳에서도 사용이 가능</li>
                     <li>한국 표준시를 "시", "분" 뿐만 아니라 "초" 단위로 표기</li>
-                    <li>시간 뿐만 아니라 날짜 및 요일 / →이번 달← 과, -지난 달-, +다음 달+ 표기</li>
+                    <li>시간 뿐만 아니라 날짜 및 요일 <br/>/ →이번 달← 과, -지난 달-, +다음 달+ 표기</li>
                     <li>wifi가 끊기더라도, 내부 RTC를 이용하여 최대 30일동안 오프라인으로 사용 가능<br/>
                     (이 때, 디스플레이 하단에는 "! RTC mode" 라 표기됨.)</li>
                     <li>각 고객 취향에 맞는 디스플레이 색상 선택 (블루, 그린, 화이트)</li>
@@ -145,12 +145,12 @@ function ProductDetail() {
                       시계의 디스플레이에 나타난 "WiFi_Config" 이름의 wifi에 연결하여 주십시오.</p>
                       <img src="/task1/two_1.png" alt="WiFi 연결" className="step-image" />
                       
-                      <p><strong>2-2.</strong> "인터넷 연결 확실치 않음" 메시지가 뜰 경우,<br/>
+                      <p><strong>2-2.</strong> "인터넷 연결 확실치 않음" 메시지가 뜰 경우,
                       하단의 "항상 연결"을 누릅니다.</p>
                       <img src="/task1/two_2.png" alt="인터넷 연결 확인" className="step-image" />
                       <img src="/task1/two_2_2.png" alt="항상 연결" className="step-image" />
                       
-                      <p><strong>2-3.</strong> 사용자의 휴대폰에서 인터넷 브라우저를 실행하고, 주소창에<br/>
+                      <p><strong>2-3.</strong> 사용자의 휴대폰에서 인터넷 브라우저를 실행하고, 주소창에
                       시계의 디스플레이에 나타난 "192.168.4.1" 을 작성한 다음, 엔터를 눌러 주십시오.</p>
                       <img src="/task1/two_3.png" alt="브라우저 주소 입력" className="step-image" />
                       <img src="/task1/two_3_2.png" alt="IP 주소 결과" className="step-image" />
@@ -177,7 +177,7 @@ function ProductDetail() {
                     <div className="sub-steps">
                       <p><strong>3-1.</strong> 만약, 디스플레이가 아래와 같이 나타난다면, wifi의 비밀번호가 틀렸을 가능성이 있습니다. (연결실패), 이 경우 2번 섹션으로 돌아가 다시 wifi 정보를 입력해 줍니다.</p>
                       
-                      <p><strong>에러 화면</strong></p>
+                      <p><strong>[에러 화면]</strong></p>
                       <img src="/task1/three_1.jpg" alt="연결 실패 화면" className="step-image" />
                       <img src="/task1/three_1_2.jpg" alt="연결 실패 에러" className="step-image" />
                       
@@ -199,12 +199,12 @@ function ProductDetail() {
 
                   <div className="step-section">
                     <h3>5. 오프라인 모드</h3>
-                    <p>wifi 연결이 불량하여 오프라인 상태인 경우, 아래와 같은 문구가 나타나며<br/>
+                    <p>wifi 연결이 불량하여 오프라인 상태인 경우, 아래와 같은 문구가 나타나며 
                     최대 30일간 지속적으로 사용하실 수 있습니다.</p>
                     <img src="/task1/wifi_clock.png" alt="RTC 모드" className="step-image" />
                     
                     <div className="sub-steps">
-                      <p>이 경우, 디스플레이 하단에 "! RTC mode" 라 표기되며<br/>
+                      <p>이 경우, 디스플레이 하단에 "! RTC mode" 라 표기되며 
                       오프라인 상태에서 최대 30일동안 사용할 수 있습니다.</p>
                       
                       <p><strong>만약, 30일이 초과한 경우</strong><br/>
