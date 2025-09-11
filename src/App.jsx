@@ -138,7 +138,7 @@ function App() {
                   <div className="member-info">
                     <div className="member-role">Web Designer / FrontEnd</div>
                     <div className="member-name">김진</div>
-                    <div className="member-affiliation">인하대 공간정보공학과 재학</div>
+                    <div className="member-affiliation">인하대학교 공간정보공학과 재학</div>
                   </div>
                 </div>
                 <div className="member-description">
