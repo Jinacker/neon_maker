@@ -522,21 +522,23 @@
 .info-value {
   color: #333;
   line-height: 1.4;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 /* 문제 제기 섹션 */
 .problem-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 15px;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .problem-number {
   background: #ff6b6b;
   color: white;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -544,12 +546,15 @@
   font-size: 14px;
   font-weight: bold;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 .problem-item p {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding-top: 2px;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 /* 해결책, 특장점 리스트 */
@@ -561,9 +566,11 @@
 
 .solution-section li, .features-section li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 8px;
-  line-height: 1.5;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 .solution-section li:before, .features-section li:before {
@@ -571,7 +578,8 @@
   color: #ff6b6b;
   font-weight: bold;
   position: absolute;
-  left: 0;
+  left: 8px;
+  top: 0;
 }
 
 /* 사용 설명서 섹션 */
@@ -589,14 +597,24 @@
   font-weight: bold;
 }
 
+.step-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 10px 0 15px 0;
+  border-radius: 8px;
+}
+
 .step-section ul {
-  margin: 10px 0;
+  margin: 12px 0;
   padding-left: 20px;
 }
 
 .step-section li {
-  margin-bottom: 6px;
-  line-height: 1.5;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 .sub-steps {
@@ -606,7 +624,10 @@
 }
 
 .sub-steps p {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 /* 부스 위치 콘텐츠 */
