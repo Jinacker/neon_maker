@@ -95,8 +95,8 @@ function App() {
               <div className="team-logo-section">
                 <img src="/neon.png" alt="Neo& 팀 로고" className="team-logo" />
               </div>
-              <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 "네오&" 입니다.</p>
-              <p className="team-description">다양한 분야의 메이커들과 함께 직접 경험하고, 여러분의 숨겨진 '메이커 본능'을 발견해보세요!</p>
+              <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 <strong>"네오&"</strong> 입니다.</p>
+              <p className="team-description">다양한 분야의 메이커들과 함께 직접 경험하고, 여러분의 숨겨진 <b>'메이커 본능'</b>을 발견해보세요!</p>
             </div>
             
             <div className="team-members">
@@ -172,7 +172,7 @@ function App() {
             <div className="location-intro">
               <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
               <h2 className="location-title">찾아오시는 길</h2>
-              <p className="location-subtitle">메이커페어 서울 2025에서 네오&을 만나보세요!</p>
+              <p className="location-subtitle">메이커페어 서울 2025에서 <strong>네오&</strong>을 만나보세요!</p>
               <p className="location-description">전체 지도와 상세 위치를 확인하여 쉽게 찾아오실 수 있습니다.</p>
             </div>
             
@@ -198,17 +198,17 @@ function App() {
               <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
               <h2 className="contact-title">문의</h2>
               <p className="contact-subtitle">궁금한 점이 있으시면 언제든 연락해주세요!</p>
-              <p className="contact-description">제품 문의부터 협업 제안까지 모든 문의를 환영합니다.</p>
+              <p className="contact-description"><strong>제품 문의</strong>부터 <strong>협업 제안</strong>까지 모든 문의를 환영합니다.</p>
             </div>
             
             <div className="contact-details">
               <div className="contact-item">
                 <span className="contact-label">팀 Neo&</span>
-                <a href="mailto:mfs2025@neo-n.org" className="contact-value">mfs2025@neo-n.org</a>
+                <a href="mailto:mfs2025@neo-n.org" className="contact-value"><b>mfs2025@neo-n.org</b></a>
               </div>
               <div className="contact-item">
                 <span className="contact-label">메이커페어 주최</span>
-                <a href="mailto:mfs2025@makerfaire.kr" className="contact-value">mfs2025@makerfaire.kr</a>
+                <a href="mailto:mfs2025@makerfaire.kr" className="contact-value"><b>mfs2025@makerfaire.kr</b></a>
               </div>
             </div>
           </div>
