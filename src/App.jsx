@@ -68,7 +68,7 @@ function App() {
           <>
             <div className="product-intro">
               <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
-              <h2 className="main-product-title">2025 네오&메이커페어 제품 사용 설명서</h2>
+              <h2 className="main-product-title">2025 Neo& 제품 사용 설명서</h2>
               <p className="product-subtitle">이 문서는 제품의 주요 기능과 사용 방법을 안내합니다.</p>
               <p className="product-description">처음 사용하시는 분도 쉽게 따라 하실 수 있도록 단계별로 설명했습니다.</p>
             </div>
@@ -130,11 +130,11 @@ function App() {
             
             <div className="contact-details">
               <div className="contact-item">
-                <span className="contact-label">Neo& 팀</span>
+                <span className="contact-label">팀 Neo&</span>
                 <a href="mailto:mfs2025@neo-n.org" className="contact-value">mfs2025@neo-n.org</a>
               </div>
               <div className="contact-item">
-                <span className="contact-label">메이커페어 주최측</span>
+                <span className="contact-label">메이커페어 주최</span>
                 <a href="mailto:mfs2025@makerfaire.kr" className="contact-value">mfs2025@makerfaire.kr</a>
               </div>
             </div>
