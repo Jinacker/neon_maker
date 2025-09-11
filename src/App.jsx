@@ -121,8 +121,23 @@ function App() {
         
         {activeTab === 'contact' && (
           <div className="contact-content">
-            <h2>문의</h2>
-            <p>연락처 정보가 들어갈 예정입니다.</p>
+            <div className="contact-intro">
+              <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
+              <h2 className="contact-title">문의</h2>
+              <p className="contact-subtitle">궁금한 점이 있으시면 언제든 연락해주세요!</p>
+              <p className="contact-description">제품 문의부터 협업 제안까지 모든 문의를 환영합니다.</p>
+            </div>
+            
+            <div className="contact-details">
+              <div className="contact-item">
+                <span className="contact-label">Neo& 팀</span>
+                <a href="mailto:mfs2025@neo-n.org" className="contact-value">mfs2025@neo-n.org</a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">메이커페어 주최측</span>
+                <a href="mailto:mfs2025@makerfaire.kr" className="contact-value">mfs2025@makerfaire.kr</a>
+              </div>
+            </div>
           </div>
         )}
       </main>

@@ -152,6 +152,87 @@
   line-height: 1.6;
 }
 
+/* 문의 콘텐츠 */
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.contact-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+.contact-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-details {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 0.5px solid #ccc;
+  border-radius: 12px;
+  padding: 28px 20px;
+}
+
+.contact-item {
+  background: white;
+  border-radius: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.contact-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6b6b;
+  min-width: 120px;
+  text-align: left;
+}
+
+.contact-value {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  flex: 1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-value:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
 /* 부스 위치 콘텐츠 */
 .location-intro {
   max-width: 600px;
