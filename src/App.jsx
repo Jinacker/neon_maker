@@ -98,6 +98,72 @@ function App() {
               <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 "네오&" 입니다.</p>
               <p className="team-description">다양한 분야의 메이커들과 함께 직접 경험하고, 여러분의 숨겨진 '메이커 본능'을 발견해보세요!</p>
             </div>
+            
+            <div className="team-members">
+              <div className="member-card">
+                <div className="member-header">
+                  <img src="/members/park.png" alt="박성훈 프로필" className="member-photo" />
+                  <div className="member-info">
+                    <div className="member-role">Leader / Maker</div>
+                    <div className="member-name">박성훈</div>
+                    <div className="member-affiliation">안양대학교 전기전자공학부 재학</div>
+                  </div>
+                </div>
+                <div className="member-description">
+                  <p>안녕하세요. 네오& 리더 박성훈 입니다.</p>
+                  <p>이번 네오&에서 프로젝트를 전반적으로 관리하는 팀장을 맡았으며 전기공학을 전공하여 앞으로도 전기, 전자 관련한 메이킹을 이어나가고자 합니다.</p>
+                  <a href="https://blog.neo-n.org" target="_blank" rel="noopener noreferrer" className="blog-link">자세히 보기</a>
+                </div>
+              </div>
+              
+              <div className="member-card member-card-right">
+                <div className="member-header member-header-right">
+                  <div className="member-info member-info-right">
+                    <div className="member-role">Product Designer</div>
+                    <div className="member-name">김현호</div>
+                    <div className="member-affiliation">경희대학교 산업디자인학과 재학</div>
+                  </div>
+                  <img src="/members/kim.png" alt="김현호 프로필" className="member-photo" />
+                </div>
+                <div className="member-description member-description-right">
+                  <p>안녕하세요, 저는 이번 메이커페어 프로젝트에서 프로덕트 디자이너를 맡고 있는 김현호입니다.</p>
+                  <p>아이디어를 시각적·물리적 프로토타입으로 구체화하는 역할을 하고 있습니다.</p>
+                  <a href="https://www.instagram.com/hyeonho_kkim/" target="_blank" rel="noopener noreferrer" className="blog-link">자세히 보기</a>
+                </div>
+              </div>
+              
+              <div className="member-card">
+                <div className="member-header">
+                  <img src="/members/jin.png" alt="김진 프로필" className="member-photo" />
+                  <div className="member-info">
+                    <div className="member-role">Web Designer / FrontEnd</div>
+                    <div className="member-name">김진</div>
+                    <div className="member-affiliation">인하대 공간정보공학과 재학</div>
+                  </div>
+                </div>
+                <div className="member-description">
+                  <p>안녕하세요, 떠오른 발상을 프로덕트로 잇는 기쁨으로 개발자의 길을 선택한 김진입니다.</p>
+                  <p>혼자서도 뭐든 뚝딱 만드는 풀스택을 목표로 성장 중이며,<br></br>지금 보시는 웹의 디자인/개발을 맡았습니다 :)</p>
+                  <a href="https://github.com/Jinacker" target="_blank" rel="noopener noreferrer" className="blog-link">자세히 보기</a>
+                </div>
+              </div>
+              
+              <div className="member-card member-card-right">
+                <div className="member-header member-header-right">
+                  <div className="member-info member-info-right">
+                    <div className="member-role">FrontEnd</div>
+                    <div className="member-name">최재정</div>
+                    <div className="member-affiliation">경기대학교 컴퓨터공학과 재학</div>
+                  </div>
+                  <img src="/members/choi.jpeg" alt="최재정 프로필" className="member-photo" />
+                </div>
+                <div className="member-description member-description-right">
+                  <p>도움이 필요한 곳이라면 어디서든, 늘 관심과 사랑을 가지고 문제를 해결하려는 소프트웨어 엔지니어 최재정입니다.</p>
+                  <p>현재 보고계신 웹을 작업했습니다.</p>
+                  <a href="https://github.com/jaejoengsin" target="_blank" rel="noopener noreferrer" className="blog-link">자세히 보기</a>
+                </div>
+              </div>
+            </div>
           </div>
         )}
         
