@@ -1,13 +1,16 @@
 import { useState } from 'react'
+import { Routes, Route, useNavigate } from 'react-router-dom'
+import ProductDetail from './ProductDetail.jsx'
 import './App.css'
 
 /**
- * 메인 앱 컴포넌트
+ * 홈 페이지 컴포넌트
  * 메이커페어 서울 2025 네온메이커 부스 랜딩 페이지
  */
-function App() {
+function Home() {
   // 탭 상태 관리
   const [activeTab, setActiveTab] = useState('products')
+  const navigate = useNavigate()
   
   // 제품 목록
   const products = [
@@ -21,8 +24,8 @@ function App() {
   ]
   
   const handleProductClick = (productId) => {
-    // 나중에 각 제품 상세 페이지로 이동하는 로직
-    console.log(`제품 ${productId} 클릭됨`)
+    // 제품 상세 페이지로 이동
+    navigate(`/product/${productId}`)
   }
   
   return (
@@ -225,6 +228,18 @@ function App() {
         </div>
       </footer>
     </div>
+  )
+}
+
+/**
+ * 메인 앱 컴포넌트 - 라우터 설정
+ */
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+    </Routes>
   )
 }
 

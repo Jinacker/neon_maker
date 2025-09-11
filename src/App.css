@@ -384,6 +384,231 @@
   text-decoration: underline;
 }
 
+/* 홈 버튼 네비게이션 */
+.home-navigation {
+  display: flex;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.home-button {
+  background: white;
+  border: none;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-right: 1px solid #e0e0e0;
+  max-width: 160px;
+}
+
+.home-button:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.home-button:active {
+  background: #e8e8e8;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 제품 상세 페이지 스타일 */
+.product-detail-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-detail-intro {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.product-detail-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.product-detail-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.product-detail-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.product-manual {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 0.5px solid #ccc;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: left;
+}
+
+.product-manual h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.product-manual p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+/* 제품 정보 섹션 */
+.product-info-section, .problem-section, .solution-section, .features-section, .manual-section {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info-section:last-child, .manual-section:last-child {
+  border-bottom: none;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #ff6b6b;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.info-value {
+  color: #333;
+  line-height: 1.4;
+}
+
+/* 문제 제기 섹션 */
+.problem-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.problem-number {
+  background: #ff6b6b;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.problem-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 해결책, 특장점 리스트 */
+.solution-section ul, .features-section ul {
+  margin: 15px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.solution-section li, .features-section li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.solution-section li:before, .features-section li:before {
+  content: "•";
+  color: #ff6b6b;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* 사용 설명서 섹션 */
+.step-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.step-section h3 {
+  color: #ff6b6b;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.step-section ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.step-section li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.sub-steps {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 3px solid #ff6b6b;
+}
+
+.sub-steps p {
+  margin-bottom: 12px;
+}
+
 /* 부스 위치 콘텐츠 */
 .location-intro {
   max-width: 600px;
