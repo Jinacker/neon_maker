@@ -96,8 +96,26 @@ function App() {
         
         {activeTab === 'location' && (
           <div className="location-content">
-            <h2>부스 위치</h2>
-            <p>메이커페어 서울 2025 부스 위치 정보가 들어갈 예정입니다.</p>
+            <div className="location-intro">
+              <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
+              <h2 className="location-title">찾아오시는 길</h2>
+              <p className="location-subtitle">메이커페어 서울 2025에서 네오&을 만나보세요!</p>
+              <p className="location-description">전체 지도와 상세 위치를 확인하여 쉽게 찾아오실 수 있습니다.</p>
+            </div>
+            
+            <div className="event-details">
+              <p><strong>일시:</strong> 2025.09.27.(토) ~ 09.28(일)</p>
+              <p><strong>시간:</strong> 10:30 ~ 17:30</p>
+              <p><strong>장소:</strong> 서울시립과학관 일대</p>
+            </div>
+            
+            <div className="map-section">
+              <h3>① 전체 행사장 지도</h3>
+              <img src="/map_full.png" alt="메이커페어 서울 2025 전체 지도" className="map-image" />
+              
+              <h3>② 네오& 부스 위치 (3-5번 부스)</h3>
+              <img src="/map_zoom.png" alt="네오& 부스 상세 위치" className="map-image" />
+            </div>
           </div>
         )}
         
@@ -112,7 +130,7 @@ function App() {
       {/* 푸터 영역 */}
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-copyright">© 2025 NeoN. All rights reserved.</div>
+          <div className="footer-copyright">© 2025 Neo&. All rights reserved.</div>
           <a href="https://www.makerfaireseoul.com/2025" target="_blank" rel="noopener noreferrer" className="homepage-link">
             메이커페어 서울 홈페이지
           </a>
