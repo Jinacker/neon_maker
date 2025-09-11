@@ -106,7 +106,7 @@ function App() {
                   <div className="member-info">
                     <div className="member-role">Leader / Maker</div>
                     <div className="member-name">박성훈</div>
-                    <div className="member-affiliation">안양대학교 전기전자공학부 재학</div>
+                    <div className="member-affiliation">안양대학교 정보전기전자공학과 재학</div>
                   </div>
                 </div>
                 <div className="member-description">
