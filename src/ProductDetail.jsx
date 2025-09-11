@@ -64,6 +64,7 @@ function ProductDetail() {
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
+                  <img src="/task1/wifi_clock.png" alt="WiFi 시계 제품" className="product-info-image" />
                   <div className="info-grid">
                     <div className="info-item">
                       <span className="info-label">제품명:</span>

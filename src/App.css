@@ -499,6 +499,14 @@
   border-bottom: none;
 }
 
+.product-info-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin: 16px auto 20px auto;
+  display: block;
+}
+
 .info-grid {
   display: flex;
   flex-direction: column;
@@ -590,6 +598,14 @@
   border-radius: 8px;
 }
 
+.step-section p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
 .step-section h3 {
   color: #ff6b6b;
   font-size: 16px;
@@ -612,7 +628,8 @@
 
 .step-section li {
   margin-bottom: 8px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 13px;
   word-break: keep-all;
   word-wrap: break-word;
 }
@@ -625,7 +642,8 @@
 
 .sub-steps p {
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 13px;
   word-break: keep-all;
   word-wrap: break-word;
 }
