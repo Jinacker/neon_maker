@@ -56,7 +56,7 @@ function ProductDetail() {
             <img src="/makey.png" alt="메이커 로고" className="intro-small-logo" />
             <h1 className="product-detail-title">{product.number} {product.title}</h1>
             <p className="product-detail-subtitle">제품 사용 설명서</p>
-            <p className="product-detail-description">이 제품의 사용법과 주요 기능을 단계별로 안내합니다.</p>
+            <p className="product-detail-description">이 페이지는 제품의 주요 기능과 사용 방법을 안내합니다.</p>
           </div>
           
           <div className="product-manual">
@@ -197,7 +197,7 @@ function ProductDetail() {
                     이때, 디스플레이 하단에 "! WiFi mode" 라 표기됩니다.</p>
                   </div>
 
-                  <div className="step-section">
+                  <div className="step-section" style={{ marginBottom: '0' }}>
                     <h3>5. 오프라인 모드</h3>
                     <p>wifi 연결이 불량하여 오프라인 상태인 경우, 아래와 같은 문구가 나타나며 
                     최대 30일간 지속적으로 사용하실 수 있습니다.</p>
@@ -210,7 +210,7 @@ function ProductDetail() {
                       <p><strong>만약, 30일이 초과한 경우</strong><br/>
                       시계는 강제 재부팅을 하게 되며</p>
                       
-                      <p>재부팅 이후에 wifi 연결에 실패할 경우,<br/>
+                      <p style={{ marginBottom: '0' }}>재부팅 이후에 wifi 연결에 실패할 경우,<br/>
                       2번 섹션로 돌아가 wifi 설정을 완료하여 주십시오.</p>
                     </div>
                   </div>

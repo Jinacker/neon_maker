@@ -469,7 +469,7 @@
   padding: 0 20px;
   border: 0.5px solid #ccc;
   border-radius: 12px;
-  padding: 28px 20px;
+  padding: 20px 20px 10px 20px;
   text-align: left;
 }
 
@@ -490,9 +490,9 @@
 
 /* 제품 정보 섹션 */
 .product-info-section, .problem-section, .solution-section, .features-section, .manual-section {
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
 }
 
 .product-info-section:last-child, .manual-section:last-child {
@@ -850,6 +850,8 @@
     font-size: 13px; /* 4개 탭에 맞게 조정 */
     border-right: 1px solid #e0e0e0;
     min-height: 44px; /* 터치하기 좋은 최소 높이 */
+    flex: 1; /* PC와 동일한 비율 유지 */
+    max-width: none; /* PC의 max-width 제약 제거 */
   }
   
   .tab-button:last-child {
@@ -874,7 +876,7 @@
   }
   
   .product-subtitle, .product-description {
-    font-size: 13px; /* 모바일 최적화 */
+    font-size: 12px; /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
   }
@@ -928,7 +930,7 @@
   }
   
   .location-subtitle, .location-description {
-    font-size: 13px;
+    font-size: 12px; /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
@@ -971,7 +973,7 @@
   }
   
   .contact-subtitle, .contact-description {
-    font-size: 13px;
+    font-size: 12px; /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
@@ -1019,7 +1021,7 @@
   }
   
   .team-subtitle, .team-description {
-    font-size: 13px;
+    font-size: 12px; /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
