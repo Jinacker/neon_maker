@@ -846,10 +846,10 @@
   }
   
   .tab-button {
-    padding: 8px 12px;
-    font-size: 13px; /* 4개 탭에 맞게 조정 */
+    padding: 6px 8px;
+    font-size: 11px; /* 더 작게 */
     border-right: 1px solid #e0e0e0;
-    min-height: 44px; /* 터치하기 좋은 최소 높이 */
+    min-height: 40px; /* 높이도 줄임 */
     flex: 1; /* PC와 동일한 비율 유지 */
     max-width: none; /* PC의 max-width 제약 제거 */
   }
@@ -1021,7 +1021,7 @@
   }
   
   .team-subtitle, .team-description {
-    font-size: 12px; /* 모바일에서 더 작게 */
+    font-size: 11px; /* 제품소개처럼 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
@@ -1173,7 +1173,7 @@
   }
   
   .team-subtitle, .team-description {
-    font-size: 12px;
+    font-size: 10px; /* 360px에서도 더 작게 */
     word-break: keep-all;
   }
   
