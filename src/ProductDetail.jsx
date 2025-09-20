@@ -223,11 +223,11 @@ function ProductDetail() {
                 <p>여기에 {product.title}의 상세한 사용 설명서가 들어갈 예정입니다.</p>
               </>
             )}
-            {id === '2' ? (
+            {id === '4' ? (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
-                  <img src="#" alt="완성된 pcb 사진" className="product-info-image" />
+                  <img src="/task4/main.png" alt="완성된 pcb 사진" className="product-info-image" />
                   <div className="info-grid">
                     <div className="info-item">
                       <span className="info-label">제품명:나만의 PCB 회로기반 </span>
@@ -243,7 +243,6 @@ function ProductDetail() {
                     </div>
                   </div>
                 </div>
-
                 <div className="explain-section">
                   <div className="explain-item">
                     <h2>PCB란?</h2>
@@ -252,9 +251,9 @@ function ProductDetail() {
                       PCB는 회로가 미리 판에 그려져 있어서 복잡하게 선을 연결하지 않아도 되고, 여러 개를 똑같이 많이 만들 수 있어요. 또 사람이 직접 납땜하다가 실수하는 경우가 줄어들어서 고장 나는 물건이 적게 나오지요.
                       그래서 제품이 고장이 덜 나고 오래 잘 쓸 수 있게 되며, 작은 공간에서도 알맞게 회로를 짤 수 있는 장점이 있어요</p>
                   </div>
-
                 </div>
                 <div className="manual-section">
+                  <div className='step-section'>
                   <h2>PCB 만들기</h2>
                   <div className="features-section">
                     <p>준비물</p>
@@ -266,17 +265,44 @@ function ProductDetail() {
                     </ul>
                     </div>
                   </div>
-                  <div className="manual-item">
+                  </div>
+                  <div className='step-section'>
+                  
                     <h2>PCB 애칭이란?</h2>
                     <p>일반적으로 pcb는 공장에서 기계로 정밀하고 빠르게 대량 생산을 하여 만들어집니다. <b>하지만 여러분도 몇가지 간단한 재료만 있다면 쉽게 만들 수 있다는 사실, 아시나요?</b>
                       유성 매직, 동판, 애칭액만 있으면 여러분도 간단하게 PCB를 만들 수 있답니다. 제공된 동판에 유성 매직으로 여러분만의 회로를 새겨보세요! 
                       그런 다음 저희 메이커 팀원들이 여러분이 만든 동판을 염화 제2철 용액에 담가드립니다. 
                       조금만 기다리면 완성된 PCB 기판을 얻을 수 있습니다! 
-                      이처럼 동판에 회로를 새기고 염화 제2철에 담그는 과정을 통해 PCB 기판을 만드는 방법을 <b>PCB애칭(Etching)</b>이라고 합니다.
-                      그러면 조금 더 자세히 PCB 기판을 만드는 과정을 살펴볼까요?</p>
+                      이처럼 동판에 회로를 새기고 염화 제2철에 담그는 과정을 통해 PCB 기판을 만드는 방법을 <b>PCB애칭(Etching)</b>이라고 합니다.</p>
                   </div>
-                  <div className='manual-item'>
-                    <h3>pcb기판 제작 과정</h3>
+
+                  <div className='step-section'>
+                    <p>이번 체험의 기대 효과</p>
+                   
+                      <ul>
+                          <li>체험자가 동판 위에 직접 그림을 그리고, 애칭 공정을 통해 실제pcb를 만드는 과정을 눈으로 확인  <br></br><b>전자회로pcb 제작공정의 기본 원리를 자연스레 이해 가능</b></li>
+                          <li>전자분야 전공 서적을 공부를 통해 얻어야 하는 딱딱한 지식이 아닌 직접 만든 결과물과 연결된 "살아있는 지식"이 되기 때문에 <br></br>단순히 키링을 만드는 것에 그치지않고, 과학과 공학 분야에 대한 새로운 호기심과 흥미를 유발</li>
+                          <li>직접 그린 형상이 담긴 키링으로 자신만의 특별한 패션 아이템 만들기 가능 <br></br><b>실제로 사용할 수 있는 나만의 아이템을 만든다는 점에서 더 큰 가치를 제공</b></li>
+                          <ul>
+                            <li>열쇠나 가방, 파우치등에 달아 일상적으로도 사용 할 수 있는 실용적 제품</li>
+                          </ul>
+                      </ul>
+                  </div>                   
+                  <div className='step-section'>
+                    <h2>PCB 기판 제작 과정</h2>
+                    <ImageSlider images={["/task4/step1.png", "/task4/step2.png", "/task4/step3-1.png", "/task4/step3-2.png", "/task4/step4-1.png", 
+                      "/task4/step4-2.png", "/task4/step5-1.png", "/task4/step5-2.png", "/task4/step6.png"]} texts={[
+                        "체험자는 부스에서 재단된 동판과 키링세트, 유성매직을 전달받습니다.",
+                        "체험자는 유성매직을 이용하여 동판 위에 자신만의 형상을 그립니다.",
+                        "그림이 완성되었다면, 메이커는 체험자로부터 동판을 받아 에칭용기에 넣고, 에칭을 진행합니다. 이후 상온에서 약 25분간 기다립니다",
+                        "그림이 완성되었다면, 메이커는 체험자로부터 동판을 받아 에칭용기에 넣고, 에칭을 진행합니다. 이후 상온에서 약 25분간 기다립니다",
+                        "에칭이 완료되었습니다.<br />메이커는 동판을 에칭액에서 조심스럽게 꺼내고,<br />알콜로 겉면을 닦아 잔류 용액을 청소합니다.",
+                        "에칭이 완료되었습니다.<br />메이커는 동판을 에칭액에서 조심스럽게 꺼내고,<br />알콜로 겉면을 닦아 잔류 용액을 청소합니다.",
+                        "완성된 pcb기판 청소가 완료 되었다면, <br />메이커는 동판을 체험자에게 보여주고, <br />체험자에게 키링 세트를 끼워 사용할 수 있도록 전달합니다.",
+                        "완성된 pcb기판 청소가 완료 되었다면, <br />메이커는 동판을 체험자에게 보여주고, <br />체험자에게 키링 세트를 끼워 사용할 수 있도록 전달합니다.",
+                        "키링이 완성되었습니다!<br />Tip: pcb기판이 오염되었을 때에는 물로 청소가 가능합니다."
+
+                      ]}/>
                   </div>
                 </div>
               </>
