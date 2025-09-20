@@ -9,7 +9,6 @@ import './App.css'
 function ProductDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
-
   // 제품 정보 (App.jsx와 동일하게 유지)
   const products = [
     { id: 1, number: '①', title: 'ESP8266을 이용한 WiFi 시계' },
