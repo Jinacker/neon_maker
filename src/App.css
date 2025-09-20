@@ -10,7 +10,7 @@
 /* 헤더 스타일 - 그리드 배경 */
 .header {
   background: linear-gradient(135deg, #e8f4ff 0%, #ffeef8 100%);
-  background-image: 
+  background-image:
     linear-gradient(rgba(200, 200, 200, 0.4) 0.5px, transparent 0.5px),
     linear-gradient(90deg, rgba(200, 200, 200, 0.4) 0.5px, transparent 0.5px);
   background-size: 4px 4px;
@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 20% 20%, rgba(255, 100, 100, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(100, 150, 255, 0.1) 0%, transparent 50%);
 }
@@ -134,19 +134,25 @@
 }
 
 /* 팀 소개 / 부스 위치 / 문의 콘텐츠 */
-.team-content, .location-content, .contact-content {
+.team-content,
+.location-content,
+.contact-content {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
 
-.team-content h2, .location-content h2, .contact-content h2 {
+.team-content h2,
+.location-content h2,
+.contact-content h2 {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
 }
 
-.team-content p, .location-content p, .contact-content p {
+.team-content p,
+.location-content p,
+.contact-content p {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
@@ -489,13 +495,18 @@
 }
 
 /* 제품 정보 섹션 */
-.product-info-section, .problem-section, .solution-section, .features-section, .manual-section {
+.product-info-section,
+.problem-section,
+.solution-section,
+.features-section,
+.manual-section {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: none;
 }
 
-.product-info-section:last-child, .manual-section:last-child {
+.product-info-section:last-child,
+.manual-section:last-child {
   border-bottom: none;
 }
 
@@ -566,13 +577,15 @@
 }
 
 /* 해결책, 특장점 리스트 */
-.solution-section ul, .features-section ul {
+.solution-section ul,
+.features-section ul {
   margin: 15px 0;
   padding-left: 0;
   list-style: none;
 }
 
-.solution-section li, .features-section li {
+.solution-section li,
+.features-section li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 12px;
@@ -581,7 +594,8 @@
   word-wrap: break-word;
 }
 
-.solution-section li:before, .features-section li:before {
+.solution-section li:before,
+.features-section li:before {
   content: "•";
   color: #ff6b6b;
   font-weight: bold;
@@ -782,7 +796,7 @@
 /* 푸터 */
 .footer {
   background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
-  background-image: 
+  background-image:
     linear-gradient(rgba(200, 200, 200, 0.4) 0.5px, transparent 0.5px),
     linear-gradient(90deg, rgba(200, 200, 200, 0.4) 0.5px, transparent 0.5px);
   background-size: 4px 4px;
@@ -801,7 +815,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 30% 70%, rgba(255, 80, 80, 0.25) 0%, transparent 60%),
     radial-gradient(circle at 70% 30%, rgba(255, 120, 120, 0.25) 0%, transparent 60%);
 }
@@ -840,87 +854,103 @@
   .header {
     padding: 30px 16px;
   }
-  
+
   .logo {
     max-width: 350px;
   }
-  
+
   .tab-button {
     padding: 6px 8px;
-    font-size: 11px; /* 더 작게 */
+    font-size: 11px;
+    /* 더 작게 */
     border-right: 1px solid #e0e0e0;
-    min-height: 40px; /* 높이도 줄임 */
-    flex: 1; /* PC와 동일한 비율 유지 */
-    max-width: none; /* PC의 max-width 제약 제거 */
+    min-height: 40px;
+    /* 높이도 줄임 */
+    flex: 1;
+    /* PC와 동일한 비율 유지 */
+    max-width: none;
+    /* PC의 max-width 제약 제거 */
   }
-  
+
   .tab-button:last-child {
     border-right: none;
   }
-  
+
   .main-content {
     padding: 24px 16px 32px 16px;
   }
-  
+
   .product-intro {
     margin-bottom: 40px;
     padding: 0 16px;
   }
-  
+
   .main-product-title {
-    font-size: 18px; /* 모바일 최적화 */
+    font-size: 18px;
+    /* 모바일 최적화 */
     line-height: 1.3;
     margin-top: 32px;
     margin-bottom: 12px;
-    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    word-break: keep-all;
+    /* 한글 단어 단위 줄바꿈 */
   }
-  
-  .product-subtitle, .product-description {
-    font-size: 12px; /* 모바일에서 더 작게 */
+
+  .product-subtitle,
+  .product-description {
+    font-size: 12px;
+    /* 모바일에서 더 작게 */
     line-height: 1.5;
-    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    word-break: keep-all;
+    /* 한글 단어 단위 줄바꿈 */
   }
-  
+
   .product-subtitle {
     margin-bottom: 4px;
   }
-  
+
   .product-description {
     margin-bottom: 24px;
   }
-  
+
   .product-item {
     padding: 18px 16px;
     gap: 14px;
-    min-height: 70px; /* 충분한 높이 확보 */
+    min-height: 70px;
+    /* 충분한 높이 확보 */
   }
-  
+
   .product-number {
-    font-size: 24px; /* 시각적 강조를 위해 크기 유지 */
+    font-size: 24px;
+    /* 시각적 강조를 위해 크기 유지 */
     min-width: 40px;
   }
-  
+
   .product-title {
-    font-size: 12px; /* 긴 제품명 줄바꿈 방지 */
+    font-size: 12px;
+    /* 긴 제품명 줄바꿈 방지 */
     line-height: 1.4;
-    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
-    overflow-wrap: break-word; /* 긴 영문 단어 줄바꿈 */
+    word-break: keep-all;
+    /* 한글 단어 단위 줄바꿈 */
+    overflow-wrap: break-word;
+    /* 긴 영문 단어 줄바꿈 */
   }
-  
+
   .footer {
     padding: 24px 16px;
   }
-  
-  .footer-copyright, .homepage-link {
-    font-size: 14px; /* 크기 유지 */
+
+  .footer-copyright,
+  .homepage-link {
+    font-size: 14px;
+    /* 크기 유지 */
   }
-  
+
   /* 부스 위치 모바일 스타일 */
   .location-intro {
     margin-bottom: 40px;
     padding: 0 16px;
   }
-  
+
   .location-title {
     font-size: 18px;
     line-height: 1.3;
@@ -928,42 +958,44 @@
     margin-bottom: 12px;
     word-break: keep-all;
   }
-  
-  .location-subtitle, .location-description {
-    font-size: 12px; /* 모바일에서 더 작게 */
+
+  .location-subtitle,
+  .location-description {
+    font-size: 12px;
+    /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
-  
+
   .location-subtitle {
     margin-bottom: 4px;
   }
-  
+
   .location-description {
     margin-bottom: 24px;
   }
-  
+
   .event-details {
     padding: 20px 16px;
   }
-  
+
   .event-details p {
     font-size: 14px;
     margin: 8px 0;
   }
-  
+
   .map-section h3 {
     font-size: 16px;
     margin: 25px 0 12px 0;
     word-break: keep-all;
   }
-  
+
   /* 문의 모바일 스타일 */
   .contact-intro {
     margin-bottom: 40px;
     padding: 0 16px;
   }
-  
+
   .contact-title {
     font-size: 18px;
     line-height: 1.3;
@@ -971,47 +1003,49 @@
     margin-bottom: 12px;
     word-break: keep-all;
   }
-  
-  .contact-subtitle, .contact-description {
-    font-size: 12px; /* 모바일에서 더 작게 */
+
+  .contact-subtitle,
+  .contact-description {
+    font-size: 12px;
+    /* 모바일에서 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
-  
+
   .contact-subtitle {
     margin-bottom: 4px;
   }
-  
+
   .contact-description {
     margin-bottom: 24px;
   }
-  
+
   .contact-item {
     padding: 18px 16px;
     gap: 12px;
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .contact-label {
     font-size: 14px;
     min-width: auto;
     text-align: left;
     margin-bottom: 4px;
   }
-  
+
   .contact-value {
     font-size: 14px;
     word-break: break-all;
     overflow-wrap: break-word;
   }
-  
+
   /* 팀 소개 모바일 스타일 */
   .team-intro {
     margin-bottom: 40px;
     padding: 0 16px;
   }
-  
+
   .team-title {
     font-size: 18px;
     line-height: 1.3;
@@ -1019,69 +1053,71 @@
     margin-bottom: 12px;
     word-break: keep-all;
   }
-  
-  .team-subtitle, .team-description {
-    font-size: 11px; /* 제품소개처럼 더 작게 */
+
+  .team-subtitle,
+  .team-description {
+    font-size: 11px;
+    /* 제품소개처럼 더 작게 */
     line-height: 1.5;
     word-break: keep-all;
   }
-  
+
   .team-subtitle {
     margin-bottom: 4px;
   }
-  
+
   .team-description {
     margin-bottom: 24px;
   }
-  
+
   .team-logo-section {
     padding: 20px 16px;
   }
-  
+
   .team-logo {
     max-width: 250px;
   }
-  
+
   /* 팀 멤버 모바일 스타일 */
   .team-members {
     padding: 0 16px;
   }
-  
+
   .member-card {
     padding: 20px 16px;
     margin-bottom: 20px;
   }
-  
+
   .member-header {
     gap: 16px;
     margin-bottom: 16px;
   }
-  
+
   .member-header-right {
     flex-direction: row;
   }
-  
+
   .member-photo {
     width: 70px;
     height: auto;
   }
-  
+
   .member-role {
     font-size: 13px;
   }
-  
+
   .member-name {
     font-size: 16px;
   }
-  
+
   .member-affiliation {
     font-size: 13px;
   }
-  
+
   .member-description p {
     font-size: 13px;
   }
-  
+
   .blog-link {
     font-size: 13px;
   }
@@ -1091,135 +1127,157 @@
   .logo {
     max-width: 280px;
   }
-  
+
   .main-product-title {
-    font-size: 16px; /* 360px 화면에서 줄바꿈 방지 */
+    font-size: 16px;
+    /* 360px 화면에서 줄바꿈 방지 */
     word-break: keep-all;
   }
-  
+
   .product-item {
     padding: 16px 14px;
     gap: 12px;
     min-height: 65px;
   }
-  
+
   .product-number {
-    font-size: 22px; /* 최소 크기 확보 */
+    font-size: 22px;
+    /* 최소 크기 확보 */
     min-width: 38px;
   }
-  
+
   .product-title {
-    font-size: 11px; /* 가장 긴 제품명도 줄바꿈 방지 */
+    font-size: 11px;
+    /* 가장 긴 제품명도 줄바꿈 방지 */
     line-height: 1.4;
     word-break: keep-all;
   }
-  
-  .product-subtitle, .product-description {
-    font-size: 12px; /* 360px 화면 최적화 */
+
+  .product-subtitle,
+  .product-description {
+    font-size: 12px;
+    /* 360px 화면 최적화 */
     word-break: keep-all;
   }
-  
+
   /* 360px 부스 위치 스타일 */
   .location-title {
     font-size: 16px;
     word-break: keep-all;
   }
-  
-  .location-subtitle, .location-description {
+
+  .location-subtitle,
+  .location-description {
     font-size: 12px;
     word-break: keep-all;
   }
-  
+
   .event-details {
     padding: 16px 14px;
   }
-  
+
   .event-details p {
     font-size: 13px;
   }
-  
+
   .map-section h3 {
     font-size: 15px;
   }
-  
+
   /* 360px 문의 스타일 */
   .contact-title {
     font-size: 16px;
     word-break: keep-all;
   }
-  
-  .contact-subtitle, .contact-description {
+
+  .contact-subtitle,
+  .contact-description {
     font-size: 12px;
     word-break: keep-all;
   }
-  
+
   .contact-item {
     padding: 16px 14px;
     gap: 10px;
   }
-  
+
   .contact-label {
     font-size: 13px;
   }
-  
+
   .contact-value {
     font-size: 13px;
   }
-  
+
   /* 360px 팀 소개 스타일 */
   .team-title {
     font-size: 16px;
     word-break: keep-all;
   }
-  
-  .team-subtitle, .team-description {
-    font-size: 10px; /* 360px에서도 더 작게 */
+
+  .team-subtitle,
+  .team-description {
+    font-size: 10px;
+    /* 360px에서도 더 작게 */
     word-break: keep-all;
   }
-  
+
   .team-logo-section {
     padding: 16px 14px;
   }
-  
+
   .team-logo {
     max-width: 200px;
   }
-  
+
   /* 360px 팀 멤버 스타일 */
   .member-card {
     padding: 16px 14px;
   }
-  
+
   .member-header {
     gap: 14px;
   }
-  
+
   .member-header-right {
     flex-direction: row;
   }
-  
+
   .member-photo {
     width: 60px;
     height: auto;
   }
-  
+
   .member-role {
     font-size: 12px;
   }
-  
+
   .member-name {
     font-size: 15px;
   }
-  
+
   .member-affiliation {
     font-size: 12px;
   }
-  
+
   .member-description p {
     font-size: 12px;
   }
-  
+
   .blog-link {
     font-size: 12px;
   }
+}
+
+.explain-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #efeb6b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.explain-item {
+  text-align:rstart;
+  line-height: 1.6;
 }
