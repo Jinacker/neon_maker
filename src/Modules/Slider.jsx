@@ -130,7 +130,7 @@ const ImageSlider = ({ images, texts, autoPlay = false, interval = 3000 }) => {
                             key={index}
                             className={index === current ? 'text active' : 'text'}
                             style={sliderStyles.explainBox}>
-                            <h3 style={{color:'black'}}>{(index + 1)}. {texts[index]}</h3>
+                            <h3 style={{color:'black'}}>{texts[index]}</h3>
                         </div>
 
                     )}
