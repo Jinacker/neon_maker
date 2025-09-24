@@ -62,7 +62,7 @@ const Slider = ({ images, currentSlide, setCurrentSlide }) => {
 
                     <img
                         src={images[currentSlide]}
-                        style={{ maxWidth: "50%", maxHeight: "50%", borderRadius: "8px" }}
+                        style={{ maxWidth: "80%", maxHeight: "80%", borderRadius: "8px" }}
                     />
                 </div>
             )}
