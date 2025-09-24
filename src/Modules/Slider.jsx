@@ -5,13 +5,35 @@ const sliderStyles = {
     container: {
         position: 'relative',
         width: '100%',
-        margin: 'auto',
-        overflow: 'hidden',
+        height: '400px', 
+        borderRadius: '10px',
+        backgroundColor: '#1a1a1a',
+    },
+    imgWrapper1: {
+        padding:'30px',
+        width: '100%',
+        height: '100%',
+    },
+    imgWrapper2: {
+        position: 'relative',
+        width: '100%',
+        height: '100%'
     },
     image: {
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        left: '0',
         width: '100%',
+        height: 'auto',
+        maxHeight: '100%',
+        borderRadius: '10px',
         display: 'block',
-        transition: 'opacity 0.5s ease-in-out',
+        opacity: "0",
+        transition: 'opacity 0.5s ease-in-out'
+    },
+    active: {
+        opacity:"1"
     },
     navButton: {
         position: 'absolute',
@@ -52,31 +74,27 @@ const sliderStyles = {
     },
     explainBox: {
         margin: '15px 10px 10px 10px',
-        textAlign: 'center',
+        minHeight: '100px',
+        textAlign: 'start',
         padding: '5px 8px',
         borderRadius: '5px',
         border: '2px solid gray',
+        transition: 'opacity 0.5s ease-in-out'
         
     }
 };
 
-const ImageSlider = ({ images, texts, autoPlay = false, interval = 3000 }) => {
+const ImageSlider = ({ images, texts}) => {
     const [current, setCurrent] = useState(0);
 
     const nextSlide = () => {
+
         setCurrent(current === images.length - 1 ? 0 : current + 1);
     };
 
     const prevSlide = () => {
         setCurrent(current === 0 ? images.length - 1 : current - 1);
     };
-
-    // 자동 슬라이드 기능
-    useEffect(() => {
-        if (!autoPlay) return;
-        const slideInterval = setInterval(nextSlide, interval);
-        return () => clearInterval(slideInterval);
-    }, [current, autoPlay, interval]);
 
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
@@ -85,17 +103,19 @@ const ImageSlider = ({ images, texts, autoPlay = false, interval = 3000 }) => {
     return (
         <>
         <div style={sliderStyles.container}>
+                <div style={sliderStyles.imgWrapper1}>
+                    <div style={sliderStyles.imgWrapper2}>
             {images.map((image, index) => (
                 <>
                     <div
                         key={index}
-                        className={index === current ? 'slide active' : 'slide'}>
-                        {index === current && (
-                            <img src={image} alt="slider-image" style={sliderStyles.image} />
-                        )}
+                        className={index === current ? 'slide active' : 'slide'}>    
+                        <img src={image} alt="slider-image" style={{ ...sliderStyles.image, ...(index === current ? sliderStyles.active : '')}} />
                     </div>
                 </>
             ))}
+                    </div>
+                </div>
             <button
                 style={{ ...sliderStyles.navButton, ...sliderStyles.leftArrow }}
                 onClick={prevSlide}
