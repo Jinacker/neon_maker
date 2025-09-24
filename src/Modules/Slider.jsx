@@ -51,7 +51,7 @@ const sliderStyles = {
         backgroundColor: 'white',
     },
     explainBox: {
-        marginTop: '15px',
+        margin: '15px 10px 10px 10px',
         textAlign: 'center',
         padding: '5px 8px',
         borderRadius: '5px',
