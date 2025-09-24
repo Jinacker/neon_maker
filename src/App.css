@@ -523,6 +523,9 @@
   flex-direction: column;
   gap: 12px;
   margin-top: 15px;
+  border-top: 2px solid #ff6b6b;
+  border-bottom: 2px solid #ff6b6b;
+  padding: 20px 0;
 }
 
 .info-item {
