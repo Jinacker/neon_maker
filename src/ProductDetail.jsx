@@ -82,42 +82,31 @@ function ProductDetail() {
                   </div>
                 </div>
 
-                <div className="problem-section">
+                <div className="explain-section">
                   <h2>문제 제기</h2>
-                  <div className="problem-item">
-                    <span className="problem-number">①</span>
-                    <p>탁상시계를 구입했다 - 오래 사용하니 시간 오차 발생.<br />
-                      <strong>"영원히 시간을 맞출 필요가 없는 탁상시계는 없을까?"</strong></p>
-                  </div>
-                  <div className="problem-item">
-                    <span className="problem-number">②</span>
-                    <p>백라이트가 없어, 어두운 곳에서는 시간 확인이 불가능</p>
-                  </div>
-                  <div className="problem-item">
-                    <span className="problem-number">③</span>
-                    <p>시야각에 크게 제한이 있음</p>
-                  </div>
+                  <p>① 탁상시계를 구입했다 - 오래 사용하니 시간 오차 발생.<br />
+                  <strong>"영원히 시간을 맞출 필요가 없는 탁상시계는 없을까?"</strong></p>
+                  <br />
+                  <p>② 백라이트가 없어, 어두운 곳에서는 시간 확인이 불가능</p>
+                  <br />
+                  <p>③ 시야각에 크게 제한이 있음</p>
                 </div>
 
-                <div className="solution-section">
+                <div className="experience-effect-section">
                   <h2>해결책 제시</h2>
-                  <ul>
-                    <li>탁상시계에 wifi 기능을 접목하여 언제 어디서든 한국 표준시를 불러오는 시계를 만들어보자.</li>
-                    <li>백라이트 LCD 디스플레이로 기존 흑백 LCD대비 시인성 확보</li>
-                  </ul>
+                  <p>• 탁상시계에 wifi 기능을 접목하여 언제 어디서든 한국 표준시를 불러오는 시계를 만들어보자.</p><br></br>
+                  <p>• 백라이트 LCD 디스플레이로 기존 흑백 LCD대비 시인성 확보</p>
                 </div>
 
-                <div className="features-section">
+                <div className="explain-section">
                   <h2>제품 특장점</h2>
-                  <ul>
-                    <li>미니멀리즘 디자인으로, 컴퓨터 책상 및 탁상 어느 곳에서도 어우러지는 디자인</li>
-                    <li>한 번 wifi에 연결하면, 그 wifi를 기억하여 집 안 어느 곳에서도 사용이 가능</li>
-                    <li>한국 표준시를 "시", "분" 뿐만 아니라 "초" 단위로 표기</li>
-                    <li>시간 뿐만 아니라 날짜 및 요일 <br />/ →이번 달← 과, -지난 달-, +다음 달+ 표기</li>
-                    <li>wifi가 끊기더라도, 내부 RTC를 이용하여 최대 30일동안 오프라인으로 사용 가능<br />
-                      (이 때, 디스플레이 하단에는 "! RTC mode" 라 표기됨.)</li>
-                    <li>각 고객 취향에 맞는 디스플레이 색상 선택 (블루, 그린, 화이트)</li>
-                  </ul>
+                  <p>• 미니멀리즘 디자인으로, 컴퓨터 책상 및 탁상 어느 곳에서도 어우러지는 디자인</p>
+                  <p>• 한 번 wifi에 연결하면, 그 wifi를 기억하여 집 안 어느 곳에서도 사용이 가능</p>
+                  <p>• 한국 표준시를 "시", "분" 뿐만 아니라 "초" 단위로 표기</p>
+                  <p>• 시간 뿐만 아니라 날짜 및 요일 <br />/ →이번 달← 과, -지난 달-, +다음 달+ 표기</p>
+                  <p>• wifi가 끊기더라도, 내부 RTC를 이용하여 최대 30일동안 오프라인으로 사용 가능<br />
+                  (이 때, 디스플레이 하단에는 "! RTC mode" 라 표기됨.)</p>
+                  <p>• 각 고객 취향에 맞는 디스플레이 색상 선택 (블루, 그린, 화이트)</p>
                 </div>
 
                 <div className="manual-section">
