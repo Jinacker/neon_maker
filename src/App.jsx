@@ -18,7 +18,7 @@ function Home() {
     { id: 2, number: '②', title: '하만/카돈 유닛 활용, 거치형 블루투스 스피커' },
     { id: 3, number: '③', title: 'SKY 스톤 유닛 활용, 휴대용 블루투스 스피커' },
     { id: 4, number: '④', title: '나만의 커스텀PCB 키링 만들기' },
-    { id: 5, number: '⑤', title: 'PC파워를 개조한 USB 16포트 멀티 충전기' },
+    { id: 5, number: '⑤', title: 'PC파워를 개조한 16포트 멀티 충전기', isDiscontinued: true },
     { id: 6, number: '⑥', title: 'DIY 무선충전기' },
     { id: 7, number: '⑦', title: '버려지는 어댑터로 만드는 휴대폰 충전기' }
   ]
@@ -77,13 +77,21 @@ function Home() {
             </div>
             <div className="product-list">
             {products.map(product => (
-              <div 
+              <div
                 key={product.id}
-                className="product-item"
+                className={`product-item ${product.isDiscontinued ? 'discontinued' : ''}`}
                 onClick={() => handleProductClick(product.id)}
               >
                 <span className="product-number">{product.number}</span>
-                <span className="product-title">{product.title}</span>
+                <span className="product-title">
+                  {product.isDiscontinued ? (
+                    <>
+                      <span style={{textDecoration: 'line-through'}}>{product.title}</span> (폐기)
+                    </>
+                  ) : (
+                    product.title
+                  )}
+                </span>
               </div>
             ))}
             </div>
@@ -191,6 +199,17 @@ function Home() {
               
               <h3>② 네오& 부스 위치 (M구역 28번 부스)</h3>
               <img src="/map_zoom.png" alt="네오& 부스 상세 위치" className="map-image" />
+
+              <h3>③ 메이커페어 2025 일정표</h3>
+              <img src="/schedule.png" alt="메이커페어 2025 일정표" className="map-image" />
+
+              <div className="spotlight-section">
+                <div className="spotlight-content">
+                  <strong>[메이커 스포트라이트 시간]</strong><br />
+                  <span className="spotlight-title">네오 & _ 실패를 연료 삼아, 메이커의 길을 걷다.</span>
+                </div>
+                <p><strong>27일(토) 15:00~15:20</strong></p>
+              </div>
             </div>
           </div>
         )}
