@@ -1313,9 +1313,9 @@
   padding-bottom: 20px;
   box-sizing: border-box;
   width: 300px;
-  border: 5px solid #707070;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  background-color: #1a1a1a;
 }
 
 .slider-logo-box{
@@ -1324,7 +1324,7 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-bottom: 5px solid #707070;
+  
 }
 
 .slider-logo{
