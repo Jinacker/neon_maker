@@ -1275,7 +1275,15 @@
 .explain-section {
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #efeb6b;
+  border: 1px solid #ff6b6b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.experience-effect-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
   padding: 10px;
   border-radius: 8px;
 }
