@@ -189,7 +189,7 @@ function Home() {
               <h3>① 전체 행사장 지도</h3>
               <img src="/map_full.png" alt="메이커페어 서울 2025 전체 지도" className="map-image" />
               
-              <h3>② 네오& 부스 위치 (3-5번 부스)</h3>
+              <h3>② 네오& 부스 위치 (M구역 28번 부스)</h3>
               <img src="/map_zoom.png" alt="네오& 부스 상세 위치" className="map-image" />
             </div>
           </div>
