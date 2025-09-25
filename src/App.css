@@ -1308,11 +1308,13 @@
 
 .image-slider-container {
   margin-top: 10px;
-  margin: 0 auto;
   margin-bottom: 40px;
+  margin: 0 auto;
   padding-bottom: 20px;
   box-sizing: border-box;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
+  min-width: 200px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #1a1a1a;
