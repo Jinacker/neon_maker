@@ -74,8 +74,9 @@ const sliderStyles = {
     },
     explainBox: {
         margin: '15px 10px 10px 10px',
-        minHeight: '100px',
+        height: '170px',
         textAlign: 'start',
+        overflowY: 'auto',
         padding: '8px 10px',
         borderRadius: '5px',
         border: '1.5px solid gray',
