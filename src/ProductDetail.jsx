@@ -61,7 +61,7 @@ function ProductDetail() {
           </div>
 
           <div className="product-manual">
-            {id === '1' ? (
+            {id === '1' && (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
@@ -217,12 +217,8 @@ function ProductDetail() {
                   </div>
                 </div>
               </>
-            ) : (
-              <>
-              
-              </>
             )}
-            {id === '4' ? (
+            {id === '4' && (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
@@ -305,12 +301,8 @@ function ProductDetail() {
                   </div>
                 </div>
               </>
-            ) : (
-              <>
-                
-              </>
             )}
-            {id === '6' ? (
+            {id === '6' && (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
@@ -337,9 +329,6 @@ function ProductDetail() {
                 <div className='image-slider-section'>
                   <h3>제품 이미지 상세</h3>
                   <div className='image-slider-container'>
-                    <div className='slider-logo-box'>
-                      <img className='slider-logo'  src="/makey.png" alt="로고" />
-                    </div>
                   <ImageSliderWithThum images={[
                     "/task6/production_f.jpg",
                     "/task6/production_b.jpg",
@@ -373,6 +362,7 @@ function ProductDetail() {
                           <li>덮개 부품</li>
                           <li>무선충전모듈</li>
                           <li>베이스 부품</li>
+                          <li>글루건</li>
                         </ul>
                       </div>
                     </div>
@@ -404,11 +394,8 @@ function ProductDetail() {
                     </a>
                 </div>
               </>
-            ) : (
-              <>
-              </>
             )}
-            {id === '7' ? (
+            {id === '7' && (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
@@ -439,9 +426,7 @@ function ProductDetail() {
                 <div className='image-slider-section'>
                   <h3>제품 이미지 상세</h3>
                   <div className='image-slider-container' >
-                    <div className='slider-logo-box' >
-                      <img className='slider-logo' src="/makey.png" alt="로고" />
-                    </div>
+                  
                     <ImageSliderWithThum images={[
                       "/task7/prod_f.png",
                       "/task7/prod_fs.png",
@@ -534,12 +519,9 @@ function ProductDetail() {
                   </a>
                 </div>
               </>
-            ) : (
-              <>
-              </>
             )}
 
-            {id === '3' ? (
+            {id === '3' && (
               <>
                 <div className="product-info-section">
                   <h2>제품 정보</h2>
@@ -574,9 +556,7 @@ function ProductDetail() {
                 <div className='image-slider-section'>
                   <h3>제품 이미지 상세</h3>
                   <div className='image-slider-container' >
-                    <div className='slider-logo-box' >
-                      <img className='slider-logo' src="/makey.png" alt="로고" />
-                    </div>
+                
                     <ImageSliderWithThum images={[
                       "/task3/prod_fs.png",
                       "/task3/prod_on_fs.png",
@@ -709,11 +689,6 @@ function ProductDetail() {
                     <p>3D모델은 어떻게 만들었을까요?</p>
                   </a>
                 </div>
-              </>
-            ) : (
-              <>
-                <h2>사용 방법</h2>
-                <p>여기에 {product.title}의 상세한 사용 설명서가 들어갈 예정입니다.</p>
               </>
             )}
           </div>
