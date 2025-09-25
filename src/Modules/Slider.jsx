@@ -74,18 +74,17 @@ const sliderStyles = {
     },
     explainBox: {
         margin: '15px 10px 10px 10px',
-        height: '170px',
+        minHeight: '75px',
         textAlign: 'start',
-        overflowY: 'auto',
         padding: '8px 10px',
         borderRadius: '5px',
-        border: '1.5px solid gray',
+        border: '1.8px solid #999999',
         transition: 'opacity 0.5s ease-in-out',
         backgroundColor: 'white'
     },
     explainText: {
         fontSize: '16px',
-        fontWeight: '500',
+        fontWeight: '400',
         color: '#222222',
     }
 };
