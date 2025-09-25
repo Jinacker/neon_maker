@@ -76,11 +76,16 @@ const sliderStyles = {
         margin: '15px 10px 10px 10px',
         minHeight: '100px',
         textAlign: 'start',
-        padding: '5px 8px',
+        padding: '8px 10px',
         borderRadius: '5px',
-        border: '2px solid gray',
-        transition: 'opacity 0.5s ease-in-out'
-        
+        border: '1.5px solid gray',
+        transition: 'opacity 0.5s ease-in-out',
+        backgroundColor: 'white'
+    },
+    explainText: {
+        fontSize: '16px',
+        fontWeight: '500',
+        color: '#222222',
     }
 };
 
@@ -150,7 +155,7 @@ const ImageSlider = ({ images, texts}) => {
                             key={index}
                             className={index === current ? 'text active' : 'text'}
                             style={sliderStyles.explainBox}>
-                            <h3 style={{color:'black'}}>{texts[index]}</h3>
+                            <p style={sliderStyles.explainText}>{texts[index]}</p>
                         </div>
 
                     )}
