@@ -91,9 +91,9 @@ function Product7Detail() {
         </div>
 
         <div className='step-section'>
-          <h2>DIY 무선충전기 상세 설명서</h2>
+          <h2>재활용 충전기 상세 설명서</h2>
           <ImageSlider images={["/task7/step1.png", "/task7/step2.png", "/task7/step3.png", "/task7/step4.png", "/task7/step5.png",
-            "/task7/step6.png", "/task6/step7.png", "/task6/step8.jpg", "/task6/step9.png"]} texts={[
+            "/task7/step6.png"]} texts={[
               <>1. 충전 기판과 충전기 케이스 하판을 준비합니다.</>,
               <>2. 충전 기판을 기판의 전원 포트가 케이스의 나사 구멍이 양 옆에 있는 홈의 위치에 오도록 넣어줍니다.</>,
               <>3. 전원 포트를 홈에 끼운 다음, 양 옆 나사 구멍에 볼트와 너트를 연결하여 단단히 끼워줍니다.</>,
@@ -115,7 +115,8 @@ function Product7Detail() {
         <div className='use-guide-item'>
           <img src="/task7/guideimg2.png" alt="guideimg1"></img>
           <div className='use-guide-text'>
-            <p>전원 포트가 iec c8만 지원하기 때문에 규격에 맞는 케이블을 사용하셔야 합니다</p>
+            <p>전원포트는 IEC C8(돼지코) 규격을 사용합니다.<br></br>
+            호환 가능한 케이블을 꽂아 사용할 수 있습니다</p>
           </div>
         </div>
         <div className='use-guide-item'>
