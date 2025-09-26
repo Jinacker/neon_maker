@@ -34,7 +34,7 @@ function ProductDetail() {
   }
 
   const handleHomeClick = () => {
-    navigate('/')
+    navigate('/?tab=products')
   }
 
   return (

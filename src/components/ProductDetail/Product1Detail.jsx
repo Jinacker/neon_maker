@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Product1Detail() {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="product-info-section">
@@ -144,6 +147,7 @@ function Product1Detail() {
           </div>
         </div>
       </div>
+
     </>
   )
 }

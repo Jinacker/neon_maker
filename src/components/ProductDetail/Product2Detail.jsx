@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Product2Detail() {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="product-info-section">
@@ -181,6 +184,7 @@ function Product2Detail() {
           <p>소스 기기에서 음원을 재생하여 음악을 감상합니다.</p>
         </div>
       </div>
+
     </>
   )
 }

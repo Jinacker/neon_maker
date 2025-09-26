@@ -1,5 +1,5 @@
-import { useState, lazy, Suspense } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { useState, lazy, Suspense, useEffect } from 'react'
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import './App.css'
 
 // 코드 스플리팅으로 ProductDetail을 lazy 로딩
@@ -13,6 +13,16 @@ function Home() {
   // 탭 상태 관리
   const [activeTab, setActiveTab] = useState('team')
   const navigate = useNavigate()
+  const location = useLocation()
+
+  // URL 파라미터에서 탭 상태 확인
+  useEffect(() => {
+    const urlParams = new URLSearchParams(location.search)
+    const tab = urlParams.get('tab')
+    if (tab) {
+      setActiveTab(tab)
+    }
+  }, [location])
   
   // 제품 목록
   const products = [

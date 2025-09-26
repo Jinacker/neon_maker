@@ -1,8 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import ImageSlider from '../../Modules/Slider'
 import ImageSliderWithThum from '../../Modules/SliderWithThum'
 
 function Product3Detail() {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="product-info-section">
@@ -179,6 +182,7 @@ function Product3Detail() {
           <p>3D모델은 어떻게 만들었을까요?</p>
         </a>
       </div>
+
     </>
   )
 }
