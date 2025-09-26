@@ -15,13 +15,15 @@ function Home() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  // URL 파라미터에서 탭 상태 확인
+  // URL 파라미터에서 탭 상태 확인 및 스크롤 최상단 이동
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search)
     const tab = urlParams.get('tab')
     if (tab) {
       setActiveTab(tab)
     }
+    // 홈으로 돌아올 때 스크롤을 맨 위로
+    window.scrollTo(0, 0)
   }, [location])
   
   // 제품 목록
