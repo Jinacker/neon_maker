@@ -272,7 +272,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/product/:id" element={
-        <Suspense fallback={<div className="loading">로딩 중...</div>}>
+        <Suspense fallback={<div></div>}>
           <ProductDetail />
         </Suspense>
       } />
