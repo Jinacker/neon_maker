@@ -11,7 +11,7 @@ const ProductDetail = lazy(() => import('./ProductDetail.jsx'))
  */
 function Home() {
   // 탭 상태 관리
-  const [activeTab, setActiveTab] = useState('products')
+  const [activeTab, setActiveTab] = useState('team')
   const navigate = useNavigate()
   
   // 제품 목록
