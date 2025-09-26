@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Product5Detail() {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="product-info-section">
@@ -39,6 +42,16 @@ function Product5Detail() {
         <a href="https://blog.neo-n.org/16poteu-meolticungjeongie-sseuil-paweoreul-sonboda/" className='link-box' target="_blank" rel="noopener noreferrer">
           16포트 멀티충전기에 쓸 파워를 손보다
         </a>
+      </div>
+
+      {/* 홈으로 버튼 */}
+      <div style={{ textAlign: 'left', marginTop: '40px' }}>
+        <button
+          className="bottom-home-button"
+          onClick={() => navigate('/?tab=products')}
+        >
+          홈으로
+        </button>
       </div>
     </>
   )

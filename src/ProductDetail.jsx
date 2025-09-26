@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import Product1Detail from './components/ProductDetail/Product1Detail'
 import Product2Detail from './components/ProductDetail/Product2Detail'
 import Product3Detail from './components/ProductDetail/Product3Detail'
@@ -32,6 +33,11 @@ function ProductDetail() {
   if (!product) {
     return <div>제품을 찾을 수 없습니다.</div>
   }
+
+  // 페이지 로드 시 스크롤을 맨 위로
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleHomeClick = () => {
     navigate('/?tab=products')

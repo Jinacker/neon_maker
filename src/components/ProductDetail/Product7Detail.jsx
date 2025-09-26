@@ -1,8 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import ImageSlider from '../../Modules/Slider'
 import ImageSliderWithThum from '../../Modules/SliderWithThum'
 
 function Product7Detail() {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="product-info-section">
@@ -132,6 +135,16 @@ function Product7Detail() {
           <img src="/task7/link_img.jpg" alt="비하인드 링크"></img>
           <p>조금 더 자세한 제작 비하인트가 궁금하시다면?</p>
         </a>
+      </div>
+
+      {/* 홈으로 버튼 */}
+      <div style={{ textAlign: 'left', marginTop: '40px' }}>
+        <button
+          className="bottom-home-button"
+          onClick={() => navigate('/?tab=products')}
+        >
+          홈으로
+        </button>
       </div>
     </>
   )

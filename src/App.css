@@ -408,6 +408,7 @@
   font-weight: bold;
   color: #666;
   cursor: pointer;
+  border-radius: 0;
   transition: all 0.2s ease;
   border-right: 1px solid #e0e0e0;
   max-width: 160px;
@@ -419,6 +420,31 @@
 }
 
 .home-button:active {
+  background: #e8e8e8;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 상세 페이지 하단 홈으로 버튼 */
+.bottom-home-button {
+  background: white;
+  border: 1px solid #d0d0d0;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  max-width: 160px;
+}
+
+.bottom-home-button:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.bottom-home-button:active {
   background: #e8e8e8;
   color: #333;
   font-weight: bold;

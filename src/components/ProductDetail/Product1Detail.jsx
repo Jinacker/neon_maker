@@ -148,6 +148,15 @@ function Product1Detail() {
         </div>
       </div>
 
+      {/* 홈으로 버튼 */}
+      <div style={{ textAlign: 'left', marginTop: '40px' }}>
+        <button
+          className="bottom-home-button"
+          onClick={() => navigate('/?tab=products')}
+        >
+          홈으로
+        </button>
+      </div>
     </>
   )
 }
