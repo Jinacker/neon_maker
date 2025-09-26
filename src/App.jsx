@@ -120,7 +120,7 @@ function Home() {
               <div className="team-logo-section">
                 <img src="/neon.png" alt="Neo& 팀 로고" className="team-logo" />
               </div>
-              <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 <br/><strong>"Neo&"</strong> 입니다.</p>
+              <p className="team-subtitle">일상 속 호기심을 7가지의 특별한 발명으로 풀어낸 <br/><strong>"Neo&"</strong> 입니다.</p><br></br>
               <p className="team-description">다양한 분야의 메이커들과 함께 직접 경험하고, 여러분의 숨겨진 <b>'메이커 본능'</b>을 발견해보세요!</p>
             </div>
             
