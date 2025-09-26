@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom'
-import ProductDetail from './ProductDetail.jsx'
 import './App.css'
+
+// 코드 스플리팅으로 ProductDetail을 lazy 로딩
+const ProductDetail = lazy(() => import('./ProductDetail.jsx'))
 
 /**
  * 홈 페이지 컴포넌트
@@ -257,7 +259,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/product/:id" element={
+        <Suspense fallback={<div className="loading">로딩 중...</div>}>
+          <ProductDetail />
+        </Suspense>
+      } />
     </Routes>
   )
 }
